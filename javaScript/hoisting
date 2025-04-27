@@ -1,0 +1,18 @@
+console.log('Hello');
+console.log('World');
+
+console.log(name); //undefined, 마치 변수가 한번 선언된 것처럼
+var name = '코드';
+console.log(name);
+
+//위는 아래와 같이 작성한 것처럼 코드가 실행되었다
+
+var name;
+console.log(name);
+name = '코드';
+console.log(name);
+
+// console.log(damon); //Cannot access 'damon' before initialization, hoisting 막아준 것. 초기화 안 했다고 경고느낌??
+// let damon = '데이먼'; //주석처리하면 not defined 라고 되어있음.
+// 그러면 값을 할당하기 전에 이미 damon이라는 변수가 존재하는 것.
+// let으로 선언했기 때문에 실제 할당하기 전에 접근 불가, const도 마찬가지. let과 const는 hoisting을 막아준다.

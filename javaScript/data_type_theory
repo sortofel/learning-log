@@ -23,7 +23,7 @@ const symbol2 = Symbol('1');
 
 console.log(symbol1 === symbol2); //false, Symbol은 유일무이한 값이다.
 
-//Object-1) Map; key:value 쌍
+//Object-1) Map; key:property 쌍
 const dictionary ={
     red: '빨간색',
     orange: '주황색',
@@ -33,6 +33,7 @@ const dictionary ={
 console.log(dictionary);
 console.log(dictionary['red']); //빨간색
 console.log(dictionary['orange']); //주황색
+console.log(${this.red}); //빨간색
 
 console.log(typeof dictionary); //object
 
